@@ -2,7 +2,7 @@ package lista3
 import java.io.File
 
 fun main() {
-    val filePath = "F:\\Javka\\Wstep_do_mobilek\\src\\main\\kotlin\\lista3\\slowa.txt"
+    val filePath = "F:\\Javka\\Wstep_do_mobilek\\src\\main\\WstepPUM\\lista3\\slowa.txt"
     val wordList = mutableListOf<String>()
     File(filePath).forEachLine { wordList.add(it) }
 
