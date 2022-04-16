@@ -14,7 +14,7 @@ fun main() {
         val msg = "%d %s %d"
         return msg.format(n, name, f(n))
     }
-    
+
     println(formatResult("number of fibonacci sequence is", 8, ::fib))
     println(formatResult("'s log2 is", 8, ::log2))
 }

@@ -4,7 +4,7 @@ val <T> List<T>.head
     get() = first()
 
 val <T> List<T>.tail
-    get() = last()
+    get() = drop(1)
 
 fun main() {
     val numbers = (1..5).toList()
