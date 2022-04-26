@@ -8,17 +8,15 @@ fun main() {
 //        return map.toSortedMap().toList()
 //    }
 
-    fun map(list: List<String>): List<Pair<Char, List<String>>> {
-        return list.groupBy{ it[0] }.toSortedMap().toList()
-//        forEach{ (key, values) -> values.filter{ it.length % 2 == 0 }}
-//        println(grouped)
-//        println(grouped.filterValues {  })
-//        println(grouped.forEach { (_, values) -> values.filter { it.length % 2 == 0 } })
+    fun map(list: List<String>) {
+        val grouped = list.groupBy { it[0] }
 
-//        values.forEach { it.filter { it.length % 2 == 0 } }
+        for (i in grouped) {
+            val lista = i.value.filter { it.length % 2 == 0 }
+            println(lista)
+        }
 
-
-
+//        return list.groupBy{ it[0] }.toSortedMap().toList()
     }
 
     val list = listOf("cherry", "blueberry", "citrus", "apple", "apricot", "banana", "coconut")
