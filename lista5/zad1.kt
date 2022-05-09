@@ -17,4 +17,3 @@ fun main() {
     val input = listOf(1, 2, 3.5, 3.7, 5, -6, 1, 1)
     println(licz(input))
 }
-

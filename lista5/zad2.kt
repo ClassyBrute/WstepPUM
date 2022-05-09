@@ -7,8 +7,6 @@ fun main() {
         return grouped.toSortedMap().toList()
     }
 
-    // fold sprawdzić
-
     val list = listOf("cherry", "blueberry", "citrus", "apple", "apricot", "banana", "coconut", "pineapples")
     println(map(list))
 }
